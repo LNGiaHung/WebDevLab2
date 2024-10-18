@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+
+        #output {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Library System Simulation</h1>
+
+    <h2>Books</h2>
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="listBooks()">List Available Books</button>
+
+    <h2>Users</h2>
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="addTeacher()">Add Teacher</button>
+    <button onclick="listUsers()">List Users</button>
+
+    <h2>Actions</h2>
+    <button onclick="borrowBook()">Borrow Book</button>
+    <button onclick="returnBook()">Return Book</button>
+
+    <div id="output"></div>
+
+    <script src="library_system.js"></script>
+    <script src="library_ui.js"></script>
+</body>
+
+</html>
